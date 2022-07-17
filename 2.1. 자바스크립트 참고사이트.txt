@@ -1,0 +1,6 @@
+
+자바스크립트 
+1. 모던 자바스크립트 튜토리얼 : https://ko.javascript.info/
+1. MDN 자바스크립트 : https://developer.mozilla.org/en-US/docs/Web/JavaScript
+2. 생활코딩 : https://opentutorials.org/course/3085
+3. 자바스크립트 학습 플랫폼 : https://exlskills.com/learn-en/courses/javascript-fundamentals-basics_javascript
