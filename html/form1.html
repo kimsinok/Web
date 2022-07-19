@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 태그</title>
+</head>
+<body>
+    
+    <form action="login.jsp" method="get">
+        아이디 : <input type="text" name="id" required  autofocus placeholder="아이디를 입력하세요"><br>
+        비밀번호 : <input type="password" name="pwd" required placeholder="비밀번호를 입력하세요"><br>
+        <input type="hidden" name="url" value="https://www.google.com"> <br>
+        닉네임 : <input type="text" name="nickName" value="HTML" disabled> <br>    
+        <button type="submit">로그인</button>
+        <button type="reset">취소</button>
+    </form>
+
+</body>
+</html>

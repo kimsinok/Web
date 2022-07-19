@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>INPUT 태그 - 숫자</title>
+</head>
+<body>
+          <form action="test.jsp" method="get" oninput="result.value=parseInt(num2.value)">
+                    숫자 : <input type="number" name="num1" value="1" min="1" max="10" step="1"> <br>
+                    숫자: <input type="range" id="num2" name="num2" min="1" max="10" step="1" value="1"><br>
+                    값: <output name="result" for="num2">1</output><br>
+                    <button type="submit">전송</button>
+          </form>
+
+</body>
+</html>
