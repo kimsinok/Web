@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>스코프(유효범위)</title>
+</head>
+<body>
+
+     <script>
+               //전역 변수
+               var username1 = '일길동';
+
+               {
+                     //전역 변수
+                    var username2 = '이길동';
+                    console.log(`username1 : ${username1}`);                   
+                    console.log(`username2 : ${username2}`);
+
+               }
+
+               console.log(`username1 : ${username1}`);
+               console.log(`username2 : ${username2}`);
+
+     </script>
+     
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>자료형</title>
+</head>
+<body>     
+     <script>
+               //기본 자료형
+               let isMarried = true;
+               let username = '일길동';
+               let gender;
+               let height = 180.5;
+               let age = 20;
+
+               console.log(`isMarried = ${isMarried},  ${typeof isMarried}`);
+               console.log(`username = ${username}, ${typeof username}`);
+               console.log(`gender = ${gender}, ${typeof gender}`);
+               console.log(`height = ${height}, ${typeof height}`);
+               console.log(`age = ${age}, ${typeof age}`);
+
+
+
+               //참조형
+               let person  = { 
+                    name: '홍길동',
+                    age: 20
+               };
+
+               console.log(`name : ${person.name}`);
+               console.log(`name : ${person['name']}`);
+
+               console.log(`person : ${typeof person}`);
+               console.log(`person : ${toString.call(person)}`);
+
+               let arr = [ 1, 2, 3, 4, 5 ];
+               
+               console.log(`arr : ${typeof arr}`);
+               console.log(`arr : ${toString.call(arr)}`);
+               
+               var func = function(name) {
+                    console.log(`Hello, ${name}`);
+               };
+               
+               console.log(`func : ${typeof func}`);
+               console.log(`func : ${toString.call(func)}`);
+
+               var obj = null;
+
+               console.log(`obj : ${typeof obj}`);
+               console.log(`obj : ${toString.call(obj)}`);
+
+
+     </script>
+</body>
+</html>
