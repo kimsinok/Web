@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 테이블</title>
+    <style>
+          table {
+               width: 500px;            
+               border-collapse: collapse;   
+          }
+
+          tr, th, td {
+               border: 1px solid blue;
+               text-align: center;
+               height: 30px;
+          }
+
+    </style>
+</head>
+<body>
+    
+    <table>        
+        <caption>선물용과 가정용 상품 구성</caption>
+        <colgroup>
+            <col width="100px">
+            <col width="50px">
+            <col width="100px">
+            <col width="150px">
+        </colgroup>
+        <thead>상품구성</thead>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        
+        <tr>
+            <td rowspan="2">선물용</td>
+            <td>3kg</td>
+            <td>11-16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            
+            <td>3kg</td>
+            <td>11-16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            <td rowspan="2">가정용</td>
+            <td>3kg</td>
+            <td>11-16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tr>
+            
+            <td>3kg</td>
+            <td>11-16과</td>
+            <td>35,000원</td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td colspan="4">테이블 요약입니다.</td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>

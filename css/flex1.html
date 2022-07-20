@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          #flex_container {
+               /* flex container */
+               display: flex;
+               flex-direction: row;
+               justify-content: flex-start;
+               
+               /* 여러줄에 아이템 표시 */
+               flex-wrap: wrap;
+
+               /* align-items: center; */
+               align-content: stretch;
+
+               width: 800px;
+               height: 500px;
+               background-color:  aqua;     
+          }
+
+          .item {
+               display: inline-block;;
+               width: 100px;
+               /* height: 100px; */
+               background-color: blue;
+               color: white;
+               text-align: center;
+               line-height: 100px;     
+               margin: 1px;
+          }
+
+     </style>
+</head>
+<body>
+     
+     <div id="flex_container">
+          <div class="item">item1</div>
+          <div class="item">item2</div>
+          <div class="item">item3</div>
+          <div class="item">item4</div>
+          <div class="item">item5</div>
+          <div class="item">item6</div>
+          <div class="item">item7</div>
+          <div class="item">item8</div>
+          <div class="item">item9</div>
+          <div class="item">item10</div>
+     </div>
+</body>
+</html>
