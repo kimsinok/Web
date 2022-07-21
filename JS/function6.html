@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">   
+     <title>유사 배열 객체</title>
+</head>
+<body>
+          <script>
+
+               const ArrayLike = {
+                    0: 'Java',
+                    1: 'MySQL',
+                    2: 'HTML',
+                    3: 'CSS',
+                    4: 'JavaScript',
+                    length: 5
+               };
+
+               
+               for(let i = 0; i<ArrayLike.length; i++) {
+                    console.log(ArrayLike[i]);
+               }
+
+               /*
+               for (const temp of ArrayLike) {
+                    console.log(temp);
+               }
+               */
+
+          </script>
+</body>
+</html>

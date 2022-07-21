@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>for구문</title>
+</head>
+<body>
+
+     <script>
+               // 배열 리터럴을 생성
+               const intarr = [ 1, 2, 3, 4, 5 ];
+
+               // console.log(typeof intarr);
+               // console.log(toString.call(intarr));
+
+               // for (let i = 0; i < intarr.length; i++) {
+               //      console.log(`intarr[${i}] = ${intarr[i]}`);
+               // }
+
+               for (const temp of intarr) {
+                    console.log(temp);
+               }
+
+               //객체 리터럴을 이용한 생성
+               const person = {
+                    name: '일길동',
+                    age: 10
+               };
+
+               // console.log(`person 자료형 : ${typeof person}`);
+               // console.log(`person 자료형 : ${toString.call(person)}`);
+
+               //console.log(`name : ${person.name}`);
+               //console.log(`name : ${person['name']}`);
+
+             for (const key in person) {
+                    console.log(`[${key}] : ${person[key]}`);
+             }
+
+
+     </script>
+     
+</body>
+</html>

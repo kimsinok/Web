@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <title>함수</title>
+</head>
+<body>
+
+     <script>
+
+          function add(a, b) {
+               console.log(`a = ${a}`);
+               console.log(`b = ${b}`);
+
+               a = a || 0;
+               b = b || 0;
+             
+               var result = a + b;  // NaN (Not a Number)
+               return result;
+          }
+
+          console.log(add());
+          console.log(add(1));
+          console.log(add(1, 2));
+
+          // console.log(`a : ${a}`);  //error
+          // console.log(`b : ${b}`); //error
+          // console.log(`result : ${result}`); //error
+
+     </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <title>arguments 객체</title>
+</head>
+<body>
+
+     <script>
+
+          function add( ) {
+               //console.log(arguments.length);
+               
+               // for (let i = 0; i < arguments.length; i++) {
+               //      console.log(arguments[i]);
+               // }               
+
+               console.log(arguments);
+
+               for (const temp of arguments) {
+                    console.log(temp);
+               }
+          }
+
+          //add();
+          // add(1);
+          // add(1, 2);
+          add(1, 2, 3);
+
+     </script>
+     
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <title>함수</title>
+</head>
+<body>
+     <script>
+               // 함수 선언
+               // 숫자가 양수인지 음수인지 0인지를 반환하는 함수
+               //함수명 : test
+
+               function test(num) {
+                    if (num > 0) {
+                         return '앙수';
+                    } else if (num < 0) {
+                         return '음수';
+                    } else {
+                         return '0';
+                    }
+               }
+
+               const result = test(10);
+               console.log(`result : ${result}`);
+               console.log(typeof test);
+               console.log(toString.call(test));
+
+
+               // 함수 리터럴 
+               // 숫자가 양수인지 음수인지 0인지를 반환하는 함수
+               //익명 함수
+
+               const func = function(num) {
+                    if (num > 0) {
+                         return '앙수';
+                    } else if (num < 0) {
+                         return '음수';
+                    } else {
+                         return '0';
+                    }
+               };
+
+               console.log(func(10));
+               console.log(typeof func);
+               console.log(toString.call(func));
+
+     </script>
+</body>
+</html>

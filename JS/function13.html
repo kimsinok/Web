@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <meta charset="UTF-8">
+     <title>콜백 함수</title>
+</head>
+<body>
+
+     <script>
+
+          const arr = [ 'Java', 'MySQL', 'JSP', 'Spring' ];
+
+          // arr.forEach(element => console.log(element));
+
+          arr.forEach((element, index) => {
+               console.log(`index : ${index}`);
+               console.log(`element : ${element}`);
+          })
+
+
+          arr.forEach(function(value, index, arr) {
+               console.log(`index : ${index}`);
+               console.log(`value : ${value}`);
+          });
+
+
+     </script>
+
+     
+
+</body>
+</html>

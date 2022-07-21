@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>콜백 함수</title>
+</head>
+<body>
+
+     <script>
+          // 함수 선언
+          // func : 콜백 함수
+          function add(a, b, func) {
+               let total = a + b;
+               func(total);
+          }
+
+          // 함수 선언
+          function printConsole(result) {
+               console.log( `result = ${result}`);
+          } 
+
+          // 함수 호출
+          add(1, 2, printConsole);
+
+
+     </script>
+     
+</body>
+</html>
