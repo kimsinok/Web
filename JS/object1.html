@@ -32,7 +32,7 @@
           const user1 = new User('일길동', 10, 'java1@gmail.com');
           user1.getUserInfo();     
 
-            // 객체 생성
+          // 객체 생성
           const user2= new User('이길동', 20, 'java2@gmail.com');
           user2.getUserInfo();  
 
@@ -40,10 +40,10 @@
 
           console.dir(User);
 
-           // user1 객체의 프로토타입 체인에 User.protoType이 있는지 체크한다.
+          // user1 객체의 프로토타입 체인에 User.protoType이 있는지 체크한다.
           console.log(User.prototype.isPrototypeOf(user1));
 
-           // user1 객체의 프로토타입 체인에 Object.protoType이 있는지 체크한다.
+          // user1 객체의 프로토타입 체인에 Object.protoType이 있는지 체크한다.
           console.log(Object.prototype.isPrototypeOf(user1));
 
           console.log(Function.prototype.isPrototypeOf(User));
