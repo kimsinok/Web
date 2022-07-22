@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array 객체</title>
+</head>
+<body>
+
+     <script>
+
+          const users = [
+               { firstName: '길동', lastName: '일',  age: 10 } ,
+               { firstName: '길동', lastName: '이',  age: 20 } ,
+               { firstName: '길동', lastName: '삼',  age: 30 } ,
+               { firstName: '길동', lastName: '사',  age: 30 } 
+          ];
+
+          // 나이가 30인 사용자 정보를 필터링하여 조회하시오.
+          const userArray = users.filter((user) => {
+               if (user.age == 30) {
+                    return true;
+               }
+          });
+
+          userArray.forEach((user) => {
+               console.log(`${user.firstName} ${user.lastName},  ${user.age}`);
+          });
+
+     </script>
+     
+</body>
+</html>

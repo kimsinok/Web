@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>내장 객체 - Object</title>
+</head>
+<body>
+     
+     <script>
+          
+               //생성자 함수를 이용한 Object 객체 생성
+               const obj1 = new Object();
+
+               console.log(obj1.toString());
+
+               const user = {
+                    name: '일길동',
+                    age: 10,
+                    email: 'java1@gmail.com',
+                    getUserInfo: function() {
+                         console.log(`이름 : ${this.name}, 나이 : ${this.age}, 이메일 : ${this.email}`);
+                    }
+               }
+
+               for (const key in user) {
+                    if (Object.hasOwnProperty.call(user, key)) {
+                         const value = user[key]; 
+                         console.log(value);                      
+                    }
+               }
+
+
+     </script>
+
+
+</body>
+</html>

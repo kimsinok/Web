@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array 객체</title>
+</head>
+<body>
+     
+     <script>
+          
+          Array.prototype.remove = function(i) {
+               this.splice(i, 1);
+          };
+
+          const arr = [ 'a', 'b', 'c', 'd' ];
+
+          arr.remove(2);
+
+          console.log(arr.join());
+
+     </script>
+
+</body>
+</html>

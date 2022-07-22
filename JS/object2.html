@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>객체 리터럴을 이용한 객체 생성</title>
+</head>
+<body>
+     <script>
+          const user = {
+               name: '일길동',
+               age: 10,
+               email: 'java1@gmail.com',
+               getUserInfo: function() {
+                    console.log(`이름 : ${this.name}, 나이 : ${this.age}, 이메일 : ${this.email}`);
+               }
+          }
+
+          user.getUserInfo();
+
+          console.log(user);
+          
+          console.log(Object.prototype.isPrototypeOf(user));
+
+
+
+     </script>
+</body>
+</html>

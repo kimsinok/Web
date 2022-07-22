@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>사용자 정의 객체 - 생성자 함수</title>
+</head>
+<body>
+
+     <script>
+          // 생성자 함수
+          function User(name, age, email) {
+               // property
+               this.name = name;
+               this.age = age;
+               this.email = email;
+
+               //method
+               /*
+               this.getUserInfo = function() {
+                    console.log(`이름 : ${this.name}, 나이 : ${this.age}, 이메일 : ${this.email}`);
+               }
+                */                
+          }
+
+          User.prototype.getUserInfo = function() {
+               console.log(`이름 : ${this.name}, 나이 : ${this.age}, 이메일 : ${this.email}`);
+          }
+
+          // 객체 생성
+          const user1 = new User('일길동', 10, 'java1@gmail.com');
+          user1.getUserInfo();     
+
+            // 객체 생성
+          const user2= new User('이길동', 20, 'java2@gmail.com');
+          user2.getUserInfo();  
+
+          console.log(user1.__proto__);
+
+          console.dir(User);
+
+           // user1 객체의 프로토타입 체인에 User.protoType이 있는지 체크한다.
+          console.log(User.prototype.isPrototypeOf(user1));
+
+           // user1 객체의 프로토타입 체인에 Object.protoType이 있는지 체크한다.
+          console.log(Object.prototype.isPrototypeOf(user1));
+
+          console.log(Function.prototype.isPrototypeOf(User));
+          
+          console.log(Object.prototype.isPrototypeOf(User));
+
+     </script>
+     
+</body>
+</html>

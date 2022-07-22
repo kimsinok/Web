@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array 객체</title>
+</head>
+<body>
+
+     <script>
+
+          const users = [
+               { firstName: '길동', lastName: '일',  age: 10 } ,
+               { firstName: '길동', lastName: '이',  age: 20 } ,
+               { firstName: '길동', lastName: '삼',  age: 30 } 
+          ];
+
+          const userList = users.map((user) => {
+               return {
+                    fullName: `${user.firstName} ${user.lastName}`,
+                    age: `${user.age}`
+               };
+          });
+
+          userList.forEach((user) => {
+               console.log(`fullName : ${user.fullName}, age : ${user.age}`);
+          });    
+
+     </script>
+     
+</body>
+</html>

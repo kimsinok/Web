@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>내장 객체 - String</title>
+</head>
+<body>
+     <script>
+          //const str = 'Hello, JavaScript!!';
+          const str = new String('Hello, JavaScript!!');
+
+          //console.log(typeof str);
+          //console.log(toString.call(str));
+
+          //console.log(`문자열의 길이 : ${str.length}`); // 19
+
+          //console.log(`문자 : ${str.charAt(0)}`); 
+          //console.log(`${str.charCodeAt(0)}`);
+
+          // const str1 = 'Hi, ';
+          // const str2 = 'Javasript!!';
+          // const result = str1.concat(str2);
+          // console.log(`result : ${result}`);
+
+          console.log('인덱스 : ', str.indexOf('a'));    //8
+          console.log('인덱스 : ', str.lastIndexOf('a'));   //10
+          console.log('인덱스 : ', str.indexOf('K'));   //-1
+          console.log(str.match(/JavaScript\w+/));
+
+          const date = '2022-07-22';
+          let year = date.substr(0, 4);
+          console.log(year);
+
+          year = date.substring(0, 4);
+          console.log(year);
+     
+          year = date.slice(0, 4);
+          console.log(year);
+
+          let day = date.slice(-5, -3);
+          console.log(day);
+
+          const arr = date.split('-');
+          console.log('year : ' + arr[0]);
+          console.log('month : ' + arr[1]);
+          console.log('day : ' + arr[2]);
+
+          const temp = '5';
+          console.log(temp.padStart(10, '*'));
+          console.log(temp.padEnd(10, '*'));
+
+          const temp1 = '    abc   ';
+          console.log(temp1.trim());
+          console.log(temp1.trim().length);
+     </script>
+</body>
+</html>

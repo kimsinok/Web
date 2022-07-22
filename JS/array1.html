@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>내장 객체 - Array</title>
+</head>
+<body>
+     <script>
+
+              //리터럴을 이용한 배열 생성
+               let  intarr = [ 1, 2, 3, , 4, 5 ];
+              // console.log(`자료형 : ${toString.call(intarr)}`);
+               
+              // 생성자 함수를 이용한 배열 생성
+              //배열 선언 및 초기화
+               intarr = new Array(1, 2, 3, 4, 5 );
+               console.log(`자료형 : ${toString.call(intarr)}`);
+               console.log(`배열의 크기 : ${intarr.length}`);
+               console.log(`배열의 요소: ${intarr.join()}`);
+
+               //배열 생성
+               intarr = new Array();
+               //console.log(`자료형 : ${toString.call(intarr)}`);
+               //console.log(`배열의 크기 : ${intarr.length}`);
+
+               intarr = new Array(5);  //배열의 크기
+               //console.log(`자료형 : ${toString.call(intarr)}`);
+               //console.log(`배열의 크기 : ${intarr.length}`);
+               //console.log(`배열의 요소: ${intarr.join()}`);              
+
+     </script>
+</body>
+</html>
